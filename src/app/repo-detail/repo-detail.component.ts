@@ -13,7 +13,7 @@ export class RepoDetailComponent implements OnInit {
 
   repo: Repo = {
     id: '', name: '', privacy: '', html_url: '', description: '', created_at: '', updated_at: '',
-    language: '', license: '', forks: null, size: null, private: false
+    language: '', license: '', forks: null, size: null, private: null
   };
 
   isLoadingData = true;
