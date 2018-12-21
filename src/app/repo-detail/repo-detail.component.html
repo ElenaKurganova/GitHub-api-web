@@ -1,0 +1,47 @@
+<app-menu></app-menu>
+
+<div style="text-align:center">
+  <h2>
+    Repo dashboard
+  </h2>
+</div>
+
+<div class="example-container mat-elevation-z8">
+  <div class="example-loading-shade"
+       *ngIf="isLoadingData">
+    <mat-spinner *ngIf="isLoadingData"></mat-spinner>
+  </div>
+
+  <div class="button-row">
+    <a mat-flat-button color="primary" [routerLink]="['']">
+      <mat-icon>keyboard_backspace</mat-icon>
+    </a>
+  </div>
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title><h3>{{repo.name}}</h3></mat-card-title>
+      <mat-card-subtitle><p>{{repo.description}}</p></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <dl>
+        <dt>Id:</dt>
+        <dd>{{repo.id}}</dd>
+        <dt>Privacy:</dt>
+        <dd>{{repo.privacy}}</dd>
+        <dt>Created:</dt>
+        <dd>{{repo.created_at | date}}</dd>
+        <dt>Updated:</dt>
+        <dd>{{repo.updated_at | date}}</dd>
+        <dt>Url:</dt>
+        <dd>{{repo.html_url}}</dd>
+        <dt>Language:</dt>
+        <dd>{{repo.language}}</dd>
+        <dt>License:</dt>
+        <dd>{{repo.license}}</dd>
+      </dl>
+
+    </mat-card-content>
+
+  </mat-card>
+</div>
