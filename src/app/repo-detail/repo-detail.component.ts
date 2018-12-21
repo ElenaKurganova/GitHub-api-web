@@ -13,7 +13,7 @@ export class RepoDetailComponent implements OnInit {
 
   repo: Repo = {
     id: '', name: '', privacy: '', html_url: '', description: '', created_at: '', updated_at: '',
-    language: '', license: ''
+    language: '', license: '', forks: null, size: null, private: false
   };
 
   isLoadingData = true;
@@ -26,8 +26,7 @@ export class RepoDetailComponent implements OnInit {
   }
 
   getRepoDetails(name) {
-    log(2);
-    log(name)
+    log(name);
     this.api.getRepoByName(name)
       .subscribe(data => {
         this.repo = data;

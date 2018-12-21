@@ -1,5 +1,10 @@
 table {
   width: 100%;
   text-align: left;
+  cursor: pointer;
 }
 
+.mat-header-cell {
+  background-color: whitesmoke;
+  font-weight: bold;
+}

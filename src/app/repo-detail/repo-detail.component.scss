@@ -9,7 +9,24 @@ dt, dd {
   vertical-align: middle;
   width: 45%;
   margin-bottom: 10px;
-  background: lavender;
   font-size: medium;
   padding: 3px;
+}
+
+.image {
+  width: 30%;
+  height: 30%;
+  display: block;
+  margin-left: 20%;
+}
+
+
+.example-card {
+  margin-bottom: 5%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.arrow{
+  background-color: whitesmoke;
 }

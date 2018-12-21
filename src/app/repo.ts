@@ -8,4 +8,7 @@ export class Repo {
   updated_at: string;
   language: string;
   license: string;
+  forks: number;
+  size: number;
+  private: boolean;
 }

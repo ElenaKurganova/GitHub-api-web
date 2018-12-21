@@ -8,7 +8,7 @@ import {Repo} from '../repo';
   styleUrls: ['./repos.component.scss']
 })
 export class ReposComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'language', 'license', 'privacy'];
+  displayedColumns: string[] = ['name', 'language', 'size', 'private', 'forks'];
 
   data: Repo[] = [];
   isLoadingData = true;
